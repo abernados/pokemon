@@ -1,0 +1,51 @@
+.o-two-columns {
+    @apply grid gap-6;
+}
+
+@screen lg {
+    .o-two-columns {
+        @apply grid-cols-2;
+    }
+}
+
+@responsive {
+    .o-two-columns.v--reverse> :first-child {
+        order: 2;
+    }
+    .o-two-columns.v--reverse> :last-child {
+        order: 1;
+    }
+    .o-two-columns.v--standard> :first-child {
+        order: 1;
+    }
+    .o-two-columns.v--standard> :last-child {
+        order: 2;
+    }
+    .o-two-columns.v--1\/3 {
+        @apply grid-cols-3;
+    }
+    .o-two-columns.v--1\/3> :first-child {
+        @apply col-span-1;
+    }
+    .o-two-columns.v--1\/3> :last-child {
+        @apply col-span-2;
+    }
+    .o-two-columns.v--2\/3 {
+        @apply grid-cols-3;
+    }
+    .o-two-columns.v--2\/3> :first-child {
+        @apply col-span-2;
+    }
+    .o-two-columns.v--2\/3> :last-child {
+        @apply col-span-1;
+    }
+    .o-two-columns.v--1\/4 {
+        @apply grid-cols-4;
+    }
+    .o-two-columns.v--1\/4> :first-child {
+        @apply col-span-1;
+    }
+    .o-two-columns.v--1\/4> :last-child {
+        @apply col-span-3;
+    }
+}

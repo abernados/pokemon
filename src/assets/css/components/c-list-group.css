@@ -1,0 +1,16 @@
+.c-list-group {
+    @apply px-8;
+}
+
+.c-list-group__item {
+    @apply flex border-transparent py-3 font-medium rounded-full;
+}
+
+.c-list-group__item:not(.is-active):hover {
+    @apply text-black;
+}
+
+.c-list-group__item:not(.v--exact).is-active,
+.c-list-group__item.v--exact.is-exact {
+    @apply bg-blue-100 text-white px-4 -mx-4;
+}

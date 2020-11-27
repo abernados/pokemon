@@ -1,0 +1,111 @@
+.c-field {}
+
+.c-field__label {
+    @apply inline-block mb-1;
+}
+
+.c-field__input {
+    @apply block px-4 py-3 rounded-none w-full outline-none shadow-none text-black bg-gray-300;
+    transition: all 150ms ease-in-out;
+    &:focus {
+        @apply rounded-full border-blue-500 border-2 border-solid text-blue-500;
+    }
+}
+
+.c-field__input:focus {
+    @apply border-blue-dark border border-solid text-blue-dark bg-white;
+}
+
+.c-field__input[readonly] {
+    @apply bg-gray-200;
+}
+
+.c-field__input[readonly] {
+    &:focus {
+        @apply outline-none;
+    }
+}
+
+.c-field__message {
+    @apply mt-1 italic text-black;
+}
+
+textarea.c-field__input {
+    &:focus {
+        @apply rounded-lg;
+    }
+}
+
+select.c-field__input {
+    appearance: none;
+    @apply py-3;
+}
+
+textarea.c-field__input.v--full {
+    @apply py-3 rounded-lg border-gray-100 border-2 border-solid text-gray-100;
+    &:focus {
+        @apply border-blue-500 text-blue-500;
+    }
+}
+
+select.c-field__input.v--full,
+.c-field__date_range.c-field__input.v--full {
+    appearance: none;
+    @apply py-3 rounded-full border-gray-100 border-2 border-solid text-gray-100;
+    &:focus {
+        @apply border-blue-500 text-blue-500;
+    }
+}
+
+.c-input-group.has-error {
+    .c-field__input {
+        border-color: #e6492d;
+    }
+}
+
+.c-input-group.has-error {
+    .c-field__message {
+        color: #e6492d;
+    }
+}
+
+.c-field.has-error {
+    @apply text-red-600;
+    .c-field__input {
+        @apply border-red-600;
+    }
+    .c-field__message {
+        @apply text-red-600;
+    }
+}
+
+.c-field__control {
+    @apply flex;
+}
+
+.c-field__append,
+.c-field__prepend {
+    @apply flex items-center justify-center px-4 shadow-none;
+    border-bottom: 2px solid #9cb3ae;
+}
+
+.c-field__prepend+.c-field__input {
+    @apply rounded-l-none;
+}
+
+.c-field__control>.c-field__input {
+    @apply rounded-r-none;
+}
+
+.c-field__control>.c-field__input:last-child {
+    @apply rounded-r-none;
+    &:focus {
+        @apply rounded-full;
+    }
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

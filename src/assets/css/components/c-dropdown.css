@@ -1,0 +1,15 @@
+.c-dropdown {
+    min-width: 100px;
+}
+
+.c-dropdown__item {
+    @apply border-b py-4 block text-center w-full;
+}
+
+.c-dropdown__item.v--danger {
+    @apply text-red-100;
+}
+
+.c-dropdown__item:last-child {
+    @apply border-b-0;
+}

@@ -1,0 +1,3 @@
+.c-label {
+    @apply text-sm uppercase text-black font-semibold;
+}

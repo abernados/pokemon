@@ -1,0 +1,35 @@
+.c-sidebar {
+    @apply flex flex-col text-white;
+    background-color: var(--sidebar-background);
+    width: var(--sidebar-width);
+    * {
+        border-color: var(--sidebar-border);
+    }
+}
+
+.c-sidebar__header {
+    @apply px-8 border-b flex items-center;
+    height: var(--header-height);
+}
+
+[theme="dark"] {
+    .c-sidebar {
+        @apply border-r-0;
+    }
+}
+
+.c-sidebar__link {
+    @apply p-4 block;
+    transition: all 300ms ease-in-out;
+    &:hover {
+        @apply font-bold text-blue-100;
+    }
+}
+
+.c-sidebar__link:not(.v--exact).is-active {
+    @apply font-bold;
+}
+
+.c-sidebar__link.v--exact.is-exact {
+    @apply font-bold;
+}

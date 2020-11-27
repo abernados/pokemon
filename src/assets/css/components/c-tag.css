@@ -1,0 +1,19 @@
+.c-tag {
+    @apply bg-gray-100 rounded-lg text-sm uppercase px-2 py-1 tracking-wide font-medium;
+}
+
+.c-tag.v--primary {
+    @apply bg-blue-100 text-white;
+}
+
+.c-tag.v--success {
+    @apply bg-green-100 text-white;
+}
+
+.c-tag.v--danger {
+    @apply bg-red-100 text-white;
+}
+
+.c-tag.v--warning {
+    @apply bg-yellow-100 text-white;
+}

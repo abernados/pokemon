@@ -1,0 +1,169 @@
+.c-button {
+    @apply px-6 py-3 text-white bg-blue-600 border-blue-600 border outline-none;
+    transition: transform 200ms, box-shadow 500ms ease-in-out;
+}
+
+.c-button.v--disabled {
+    @apply bg-gray-600 border-gray-600 text-white;
+}
+
+.c-button:hover {
+    /* transform: translateY(-1px); */
+    @apply shadow-lg;
+}
+
+.c-button.v--primary,
+.c-button.v--primary.c-button.v--disabled:hover {
+    @apply bg-blue-600 border-blue-600 text-white;
+}
+
+.c-button.v--primary:hover {
+    @apply text-blue-600 bg-transparent;
+}
+
+.c-button.v--success,
+.c-button.v--success.c-button.v--disabled:hover {
+    @apply bg-green-600 border-green-600 text-white;
+}
+
+.c-button.v--success:hover {
+    @apply text-green-600 bg-transparent;
+}
+
+.c-button.v--danger,
+.c-button.v--danger.c-button.v--disabled:hover {
+    @apply bg-red-600 border-red-600 text-white;
+}
+
+.c-button.v--danger:hover {
+    @apply text-red-600 bg-transparent;
+}
+
+.c-button.v--secondary,
+.c-button.v--secondary.c-button.v--disabled:hover {
+    @apply bg-gray-600 border-gray-600 text-white;
+}
+
+.c-button.v--info,
+.c-button.v--info.c-button.v--disabled:hover {
+    @apply bg-indigo-600 border-indigo-600 text-white;
+}
+
+.c-button.v--info:hover {
+    @apply text-indigo-600 bg-transparent;
+}
+
+.c-button.v--info.active {
+    @apply bg-indigo-600 border-indigo-600 text-white font-bold;
+}
+
+.c-button.v--warning,
+.c-button.v--warning.c-button.v--disabled:hover {
+    @apply bg-yellow-500 border-yellow-600 text-white;
+}
+
+.c-button.v--warning:hover {
+    @apply text-yellow-500 bg-transparent;
+}
+
+.c-button.v--outline {
+    @apply bg-transparent text-gray-600;
+}
+
+.c-button.v--outline:hover {
+    @apply bg-gray-600 text-white;
+    transition: background-color 200ms, color 200ms ease-in-out;
+}
+
+.c-button.v--outline.v--primary {
+    @apply text-blue-600;
+}
+
+.c-button.v--outline.v--primary:hover {
+    @apply bg-blue-600 text-white;
+}
+
+.c-button.v--outline.v--success {
+    @apply text-green-600;
+}
+
+.c-button.v--outline.v--success:hover {
+    @apply bg-green-600 text-white;
+}
+
+.c-button.v--outline.v--danger {
+    @apply text-red-600;
+}
+
+.c-button.v--outline.v--danger:hover {
+    @apply bg-red-600 text-white;
+}
+
+.c-button.v--outline.v--secondary {
+    @apply text-gray-600 border-gray-600;
+}
+
+.c-button.v--outline.v--secondary:hover {
+    @apply bg-white text-gray-600;
+}
+
+.c-button.v--outline.v--info {
+    @apply text-indigo-600;
+}
+
+.c-button.v--outline.v--info:hover {
+    @apply bg-indigo-600 text-white;
+}
+
+.c-button.v--outline.v--warning {
+    @apply text-yellow-600;
+}
+
+.c-button.v--outline.v--warning:hover {
+    @apply bg-yellow-600 text-white;
+}
+
+.c-button.v--link {
+    @apply border-0;
+    background-image: none;
+    box-shadow: none;
+}
+
+.c-button.v--menu {
+    background-image: none;
+    box-shadow: none;
+    &:hover {
+        @apply bg-gray-600;
+    }
+}
+
+.c-button.v--large,
+.c-button.v--outline.v--large {
+    @apply py-4 font-medium;
+}
+
+.c-button.v--small,
+.c-button.v--outline.v--small {
+    @apply p-2 text-xs;
+}
+
+.c-button.v--link {
+    @apply bg-transparent border-transparent;
+}
+
+.c-button.v--square {
+    @apply rounded-none;
+}
+
+.c-button-group {
+    @apply relative inline-flex align-middle;
+}
+
+.c-button-group>.c-button,
+.c-button-group>.c-button.v--outline {
+    @apply relative flex-auto rounded-none;
+}
+
+.c-button.active {
+    @apply text-black bg-gray-600 border-gray-600;
+}

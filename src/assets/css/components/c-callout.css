@@ -1,0 +1,51 @@
+.c-callout {
+    @apply py-6 px-8 rounded bg-gray-200;
+}
+
+.c-callout__heading {
+    @apply mb-2;
+}
+
+.c-callout.v--info {
+    background-color: rgba(22, 101, 216, 0.1);
+}
+
+.c-callout.v--success {
+    @apply bg-green-200;
+}
+
+.c-callout.v--warning {
+    @apply bg-yellow-200;
+}
+
+.c-callout.v--note {}
+
+.c-callout.v--danger {
+    @apply bg-red-200;
+}
+
+.c-callout .c-callout__heading:before {
+    @apply font-bold mr-2;
+    font-size: 0.75em;
+}
+
+.c-callout.v--info .c-callout__heading:before {
+    @apply text-blue-100;
+    content: '\f05a';
+}
+
+.c-callout.v--success .c-callout__heading:before {
+    content: '\f058';
+}
+
+.c-callout.v--warning .c-callout__heading:before {
+    content: '\f071';
+}
+
+.c-callout.v--note .c-callout__heading:before {
+    content: '\f27a';
+}
+
+.c-callout.v--danger .c-callout__heading:before {
+    content: '\f7ba';
+}

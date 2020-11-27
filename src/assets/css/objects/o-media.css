@@ -1,0 +1,11 @@
+.o-media {
+  @apply flex items-center px-8 py-3 font-medium;
+}
+
+.o-media.v--large {
+  @apply py-4;
+}
+
+.o-media__heading {
+  @apply font-medium;
+}

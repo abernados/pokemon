@@ -1,0 +1,19 @@
+.c-flag {
+    @apply p-1 px-2 rounded font-medium text-xs tracking-wider text-white;
+}
+
+.c-flag.v--danger {
+    @apply bg-red-100;
+}
+
+.c-flag.v--success {
+    @apply bg-green-100;
+}
+
+.c-flag.v--warning {
+    @apply bg-yellow-100;
+}
+
+.c-flag.v--primary {
+    @apply bg-blue-500;
+}

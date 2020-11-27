@@ -1,0 +1,34 @@
+.c-header {
+    @apply px-8 py-6 border-b flex items-center text-blue-100 relative;
+    height: 70px;
+}
+
+.c-header__actions {
+    @apply mr-8;
+}
+
+.c-header__toggle-sidebar {
+    @apply absolute left-0 h-full;
+    &:focus {
+        @apply outline-none;
+    }
+}
+
+.c-header.v--secondary {
+    @apply justify-start;
+}
+
+@screen md {
+    .c-header {
+        @apply justify-start;
+    }
+}
+
+@screen lg {
+    .c-header__actions {
+        @apply mr-0;
+    }
+    .c-header__toggle-sidebar {
+        @apply hidden;
+    }
+}

@@ -1,0 +1,45 @@
+.o-box {}
+
+.o-box__header,
+.o-box__body,
+.o-box__footer {
+    @apply px-8 py-8 border;
+}
+
+.o-box__header {
+    @apply rounded-t-lg border-b-0 text-gray-900;
+}
+
+.o-box__header.v--headline {
+    @apply items-center uppercase;
+}
+
+.o-box__heading {
+    @apply text-lg mb-0 uppercase;
+}
+
+.o-box__body {
+    @apply rounded-lg;
+}
+
+.o-box__footer {
+    @apply border-t-0 flex rounded-b-lg;
+}
+
+.o-box__header+.o-box__body,
+.o-box__body+.o-box__body {
+    @apply border-t-0 rounded-t-none;
+}
+
+.o-box__footer+.o-box__body,
+.o-box__body+.o-box__body {
+    @apply border-t-0 rounded-b-none;
+}
+
+.o-box.v--inverse {
+    .o-box__header,
+    .o-box__body,
+    .o-box__footer {
+        @apply bg-black border-0 text-white;
+    }
+}

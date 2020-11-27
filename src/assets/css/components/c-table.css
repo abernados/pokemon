@@ -1,0 +1,37 @@
+.c-table {
+    @apply w-full border;
+}
+
+.c-table th,
+.c-table td {
+    @apply px-8 py-4 border-b;
+}
+
+.c-table th {
+    /* @apply c-label; */
+    @apply text-sm uppercase text-black font-semibold;
+}
+
+.c-table th {
+    @apply text-left;
+}
+
+.c-table.v--compact th,
+.c-table.v--compact td {
+    @apply py-2 text-sm;
+}
+
+.c-table th,
+.c-table td {}
+
+.c-table tbody tr:last-child td {
+    @apply border-b-0;
+}
+
+.c-table.v--invoice {
+    @apply border-0;
+    th,
+    td {
+        @apply px-0 border-0;
+    }
+}

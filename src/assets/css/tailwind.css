@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@import "./base/boilerplate.css";
+
+/** Objects. **/
+
+@import "./objects/o-box.css";
+@import "./objects/o-page.css";
+@import "./objects/o-media.css";
+@import "./objects/o-two-columns.css";
+
+/** Components that are needed to be on top. **/
+
+@import "./components/c-label.css";
+@import "./components/c-avatar.css";
+@import "./components/c-button.css";
+@import "./components/c-callout.css";
+@import "./components/c-dropdown.css";
+@import "./components/c-field.css";
+@import "./components/c-header.css";
+@import "./components/c-list-group.css";
+@import "./components/c-tag.css";
+@import "./components/c-sidebar.css";
+@import "./components/c-table.css";
+@import "./components/c-toast.css";
+@import "./components/c-flag.css";
+@tailwind utilities;
+@import "./custom/credit-card.css";
