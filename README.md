@@ -1,4 +1,4 @@
-# swipebit_ui
+# Appetiser Coding Exam for Frontend Developer Position
 
 ## Project setup
 ```
