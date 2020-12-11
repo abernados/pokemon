@@ -1,4 +1,5 @@
-# Appetiser Coding Exam for Frontend Developer Position
+# Appetiser 
+
 
 ## Project setup
 ```
